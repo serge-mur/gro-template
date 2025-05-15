@@ -1,3 +1,4 @@
+<!-- 15.05.25 - 4 -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,20 +13,110 @@
     <div class="container">
         
         <header class="header">
-            header
+            <a href="/" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+            <nav class="header__menu">
+                <a href="#" class="header__menu-item">Блог</a>
+                <a href="#" class="header__menu-item header__menu-item_off">Продукты</a>
+                <a href="#" class="header__menu-item">Контакты</a>
+            </nav>
+            <button class="header__login">Войти в GRO</button>
+            <button class="header__burger"></button>
         </header>
 
-        <main class="main">
-
-            main
-
-        </main>
-
-        <footer class="footer">
-            footer
-        </footer>
-
     </div>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="container container_padding_thin">
+                <div class="hero__wrapper">
+                    <div class="hero__content-wrapper">
+                        <h1 class="hero__title">Telegram-канал, база знаний и инструменты, которые упрощают путь развития.</h1>
+                        <div class="hero__bottom">
+                            <p class="hero__subtitle">Telegram-канал, база знаний и обучающие инструменты, которые упрощают твой путь развития.</p>
+                            <button class="hero__btn-tg">Подписаться</button>
+                        </div>
+                    </div>
+                    <div class="hero__photo-wrapper">
+                        <img class="hero__photo" src="img/hero_photo.jpg" alt="photo">
+                        <div class="hero__photo-title-wrapper">
+                            <div class="hero__photo-title">Никита Любаев</div>
+                            <div class="hero__photo-subtitle">Автор проекта GRO</div>                            
+                        </div>
+                        <div class="hero__photo-btn">Обо мне</div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section class="inside">
+            <div class="container">
+                <div class="inside__header">
+                    <h2 class="inside__title">Что внутри <span>системы GRO?</span></h2>
+                    <p class="inside__subtitle">Фреймворки, живой опыт, база знаний и поддержка. Всё — в одной системе.</p>                    
+                </div>
+            </div>
+
+            <div class="container container_padding_thin-left">
+                <div class="inside__slider swiper inside-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Личный канал и живой опыт</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Личный канал с наблюдениями, мини-постами и практиками роста</div>                                
+                        </div>
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Фреймворки и гайды</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Готовые схемы и подходы, чтобы расти по плану, а не хаотично</div>                                
+                        </div>
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Фреймворки и гайды</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Готовые схемы и подходы, чтобы расти по плану, а не хаотично</div>                                
+                        </div>
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Фреймворки и гайды</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Готовые схемы и подходы, чтобы расти по плану, а не хаотично</div>                                
+                        </div>
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Фреймворки и гайды</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Готовые схемы и подходы, чтобы расти по плану, а не хаотично</div>                                
+                        </div>
+                        <div class="swiper-slide inside-card">
+                            <div class="inside-card__wrapper">
+                                <div class="inside-card__title">Фреймворки и гайды</div>
+                                <div class="inside-card__icon"><img src="img/inside_icon_1.svg" alt=""></div>
+                            </div>
+                            <div class="inside-card__text">Готовые схемы и подходы, чтобы расти по плану, а не хаотично</div>                                
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        footer
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
