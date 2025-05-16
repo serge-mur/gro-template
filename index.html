@@ -1,4 +1,4 @@
-<!-- 15.05.25 - 5 -->
+<!-- 15.05.25 - 7 -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,7 +13,9 @@
     <div class="container">
         
         <header class="header">
-            <a href="/" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+            <a href="/" class="header__logo">
+                <img class="header__img" src="img/logo.svg" alt="logo">
+            </a>
             <nav class="header__menu">
                 <a href="#" class="header__menu-item">Блог</a>
                 <a href="#" class="header__menu-item header__menu-item_off">Продукты</a>
@@ -157,23 +159,22 @@
                             <p>«Что для меня важно:<br>осознанность, дисциплина, внимание к себе и честность</p>
                             <p>Эти принципы — основа GRO.»</p>
                         </div>
-                        <div class="about__content-first-caption">
-                            <p>«Что для меня важно:<br>осознанность, дисциплина, внимание к себе и честность</p>
-                            <p>Эти принципы — основа GRO.»</p>
-                        </div>
+                        <div class="about__content-first-caption">Никита Любаев</div>
                     </div>
-                    <div class="about__photo">
-                        <img src="img/about_photo.png" alt="photo">
+                    <div class="about__photo-wrapper">
+                        <img class="about__photo" src="img/about_photo.png" alt="photo">
                     </div>
                     <div class="about__content-second">
-                        <div class="about__content-second-text">
-                            <h3>GRO — не проект, а продолжение моего пути.</h3>
-                            <p>Я не создавал продукт, я собрал в систему то, что помогло самому не сгореть и продолжать расти.</p>
-                            <p>10+ лет строю бренды, управлял сотнями миллионов в маркетинге. Потом пошёл глубже — в фокус, энергию и дисциплину.</p>
-                            <p>Всё, что здесь — прожито. Сначала — для себя.</p>
-                            <p>Сейчас — для других.</p>
+                        <div class="about__content-second-wrapper">
+                            <div class="about__content-second-text">
+                                <h3>GRO — не проект, а продолжение моего пути.</h3>
+                                <p>Я не создавал продукт, я собрал в систему то, что помогло самому не сгореть и продолжать расти.</p>
+                                <p>10+ лет строю бренды, управлял сотнями миллионов в маркетинге. Потом пошёл глубже — в фокус, энергию и дисциплину.</p>
+                                <p>Всё, что здесь — прожито. Сначала — для себя.</p>
+                                <p>Сейчас — для других.</p>
+                            </div>
+                            <a href="#" class="about__content-second-link">Почему GRO - это не курс, а путь</a>                            
                         </div>
-                        <a href="#" class="about__content-second-link">Почему GRO - это не курс, а путь</a>
                     </div>
                 </div>
             </div>
@@ -182,7 +183,41 @@
     </main>
 
     <footer class="footer">
-        footer
+        <div class="container container_full-height">
+            <div class="footer__wrapper">
+                <div class="footer__first">
+                    <div class="footer__contacts contacts">
+                        <div class="contacts__person">
+                            <div class="contacts__photo">
+                                <img src="img/tg_photo.jpg" alt="photo">
+                            </div>
+                            <div>
+                                <div class="contacts__title">GRO / Никита Любаев о росте и продуктивности</div>
+                                <div class="contacts__name">@nikita_lyubaev</div>                            
+                            </div>
+                        </div>
+                        <div class="contacts__socials">
+                            <a href="#" class="contacts__link-tg" target="_blank">В канал</a>
+                            <a href="#" class="contacts__link-vk" target="_blank"></a>
+                            <a href="#" class="contacts__link-dzen" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="section__header">
+                        <h2 class="section__title">Всё, что нужно для роста, <span>— в одном месте.</span></h2>           
+                    </div> 
+                </div>
+                <div class="footer__second">
+                    <div class="footer__menu">
+                        <a href="#" class="footer__menu-item">Блог</a>
+                        <a href="#" class="footer__menu-item footer__menu-item_off">Продукты</a>
+                        <a href="#" class="footer__menu-item">Контакты</a>
+                    </div>
+                    <div class="footer__copyright">
+                        © 2025 GRO
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
