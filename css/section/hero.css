@@ -30,6 +30,9 @@
     margin-bottom: 32px;
 }
 .hero__btn-tg {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     background-color: var(--text_001);
     color: #fff;
     border: 1px solid var(--text_001);
@@ -73,6 +76,9 @@
 }
 .hero__photo-btn {
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     bottom: 44px;
     left: 44px;
     color: #fff;

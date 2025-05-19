@@ -13,6 +13,10 @@ img {
     vertical-align: middle;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: "Golos Text", sans-serif;
     font-weight: 400;
@@ -165,6 +169,34 @@ body {
     font-size: 26px;
     line-height: 140%;
 }
+@media (max-width: 1440px) {
+    .section {
+        margin-bottom: 56px;
+    }
+    .section__header {
+        padding-bottom: 40px;    
+    }
+    .section__title {
+        font-size: 56px;
+    }
+    .section__subtitle {
+        font-size: 20px;
+    }  
+}
+@media (max-width: 768px) {
+    .section {
+        margin-bottom: 32px;
+    }
+    .section__header {
+        padding-bottom: 24px;    
+    }
+    .section__title {
+        font-size: 32px;
+    }
+    .section__subtitle {
+        font-size: 16px;
+    }  
+}
 
 /* footer */
 .footer {
@@ -189,13 +221,18 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-bottom: 24px;
 }
 .contacts__photo {
+    width: 84px;
+    height: 84px;
+    flex-shrink: 0;
 }
 .contacts__title {
     font-weight: 500;
     font-size: 26px;
     line-height: 140%;
+    margin-bottom: 4px;
 }
 .contacts__name {
     color: var(--text_002);
@@ -204,12 +241,37 @@ body {
     line-height: 140%;
 }
 .contacts__socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .contacts__link-tg {
+    background-color: var(--text_001);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    height: 72px;
+    gap: 12px;
+    padding: 0 40px;
+    text-decoration: none;
+    border-radius: 40px;
+    white-space: nowrap;
 }
 .contacts__link-vk {
+    display: inline-flex;
+    flex-shrink: 0;
+    background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.7819 17.8943C5.94864 17.8943 2.05107 13.068 1.88867 5.03711H5.31153C5.42396 10.9316 7.94739 13.4284 9.94614 13.9432V5.03711H13.1691V10.1208C15.1429 9.90197 17.2166 7.58537 17.9162 5.03711H21.1391C20.8755 6.35871 20.3501 7.61006 19.5956 8.71288C18.8411 9.8157 17.8739 10.7463 16.7544 11.4464C18.004 12.0861 19.1077 12.9915 19.9928 14.103C20.8778 15.2144 21.524 16.5066 21.8887 17.8943H18.3409C18.0135 16.689 17.3481 15.6101 16.4281 14.7928C15.5081 13.9754 14.3744 13.456 13.1691 13.2997V17.8943H12.7819Z" fill="white"/></svg>') no-repeat center center var(--text_001);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
 }
 .contacts__link-dzen {
+    display: inline-flex;
+    flex-shrink: 0;
+    background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9286 13.9657C12.3571 15.5871 12.2429 17.6085 12.1071 22.0371C16.2357 22.0371 19.0857 22.0228 20.5571 20.5943C21.9857 19.1228 22 16.1371 22 12.1443C17.5714 12.2871 15.55 12.3943 13.9286 13.9657ZM2 12.1443C2 16.1371 2.01429 19.1228 3.44286 20.5943C4.91429 22.0228 7.76429 22.0371 11.8929 22.0371C11.75 17.6085 11.6429 15.5871 10.0714 13.9657C8.45 12.3943 6.42857 12.28 2 12.1443ZM11.8929 2.03711C7.77143 2.03711 4.91429 2.0514 3.44286 3.47997C2.01429 4.9514 2 7.93711 2 11.93C6.42857 11.7871 8.45 11.68 10.0714 10.1085C11.6429 8.48711 11.7571 6.46568 11.8929 2.03711ZM13.9286 10.1085C12.3571 8.48711 12.2429 6.46568 12.1071 2.03711C16.2357 2.03711 19.0857 2.0514 20.5571 3.47997C21.9857 4.9514 22 7.93711 22 11.93C17.5714 11.7871 15.55 11.68 13.9286 10.1085Z" fill="white"/></svg>') no-repeat center center var(--text_001);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
 }
 .footer .section__header {
     padding-bottom: 0;
@@ -239,8 +301,119 @@ body {
     cursor: default;
 }
 .footer__copyright {
-    color: var(--text_003);
     font-weight: 400;
     font-size: 19px;
     line-height: 140%;
+    display: flex;
+    gap: 24px;
+}
+.footer__copyright span {
+    color: var(--text_003);
+}
+.footer__copyright a {
+    color: var(--text_002);
+    text-decoration: none;
+}
+@media (max-width: 1440px) {
+    .footer {
+        background: url(../img/footer_back_tablet.png) no-repeat right 188px bottom 0 #fff;
+        padding: 56px 0;
+        height: 593px;
+    }
+    .contacts__photo {
+        width: 108px;
+        height: 108px;
+    }
+    .contacts__title {
+        font-size: 20px;
+    }
+    .contacts__name {
+        font-size: 14px;
+    }
+    .contacts__link-tg {
+        background-color: var(--text_001);
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        height: 56px;
+        gap: 12px;
+        padding: 0 40px;
+        text-decoration: none;
+        border-radius: 40px;
+        white-space: nowrap;
+    }
+    .contacts__link-vk {
+        width: 56px;
+        height: 56px;
+    }
+    .contacts__link-dzen {
+        width: 56px;
+        height: 56px;
+    }
+    .footer__menu-item {
+        font-size: 20px;
+    }
+    .footer__copyright {
+        font-size: 16px;
+    }
+    .footer__copyright span {
+        color: var(--text_003);
+    }
+    .footer__copyright a {
+        color: var(--text_002);
+        text-decoration: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        background: url(../img/footer_back_mob.png) no-repeat right bottom #fff;
+        padding: 32px 0;
+        height: 703px;
+    }  
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer__first {
+        width: 100%;
+    }
+    .contacts {
+        margin-bottom: 40px;
+    }
+    .contacts__title {
+        font-size: 16px;
+    }
+    .contacts__name {
+        font-size: 12px;
+    }
+    .contacts__link-tg {
+        height: 44px;
+    }
+    .contacts__link-vk {
+        width: 44px;
+        height: 44px;
+    }
+    .contacts__link-dzen {
+        width: 44px;
+        height: 44px;
+    }
+    .footer__second {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .footer__menu {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .footer__menu-item {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .footer__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        flex-direction: column;
+        gap: 16px;
+    }
 }
