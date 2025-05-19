@@ -11,7 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const insideSlider = new Swiper('.inside-slider', {
-        slidesPerView: 4.25,
+        slidesPerView: 1.25,
         spaceBetween: 8,
+        breakpoints: {
+            576: {
+                slidesPerView: 3.5,
+            },
+            1440: {
+                slidesPerView: 4.25,
+            },
+        }
     });
 });
