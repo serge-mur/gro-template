@@ -14,12 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1.25,
         spaceBetween: 8,
         breakpoints: {
-            576: {
+            768: {
                 slidesPerView: 3.5,
             },
             1440: {
                 slidesPerView: 4.25,
             },
         }
+    });
+
+    const stepsSlider = new Swiper('.steps-slider', {
+        slidesPerView: 1.25,
+        spaceBetween: 8,
+        breakpoints: {
+            768: {
+                slidesPerView: 3.25,
+            },
+        },
+        navigation: {
+            nextEl: '.steps__next',
+            prevEl: '.steps__prev',
+        },
     });
 });
