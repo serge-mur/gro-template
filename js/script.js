@@ -32,8 +32,31 @@ document.addEventListener('DOMContentLoaded', function() {
             },
         },
         navigation: {
-            nextEl: '.steps__next',
-            prevEl: '.steps__prev',
+            nextEl: '.steps .slider__next',
+            prevEl: '.steps .slider__prev',
         },
     });
+
+    const postsSlider = new Swiper('.posts-slider', {
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.posts .slider__next',
+            prevEl: '.posts .slider__prev',
+        },
+    });
+
+    const reviewsSlider = new Swiper('.reviews-slider', {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+        },
+        navigation: {
+            nextEl: '.reviews .slider__next',
+            prevEl: '.reviews .slider__prev',
+        },
+    });
+
 });
