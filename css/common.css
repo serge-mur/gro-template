@@ -24,6 +24,7 @@ body {
     line-height: 130%;
     background-color: var(--bg);
     color: var(--text_001);
+    scrollbar-gutter: stable;
 }
 
 /* container */
@@ -388,6 +389,7 @@ body {
     gap: 16px;
 }
 .footer__menu-item {
+    position: relative;
     color: var(--text_001);
     padding: 18px 40px;
     font-weight: 500;
@@ -395,6 +397,21 @@ body {
     line-height: 140%;
     letter-spacing: 0%;
     text-decoration: none;
+}
+.footer__menu-item-label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -20px;
+    right: -10px;
+    height: 28px;
+    padding: 0 16px;
+    border-radius: 60px;
+    background-color: #fff;
+    color: var(--text_001);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
 }
 .footer__menu-item_off {
     color: var(--text_003);
@@ -431,6 +448,7 @@ body {
         font-size: 14px;
     }
     .contacts__link-tg {
+        height: 56px;
         padding: 0 16px;
         gap: 12px;
     }
@@ -514,3 +532,82 @@ body {
     }
 }
 /* #endregion footer */
+
+/* modals */
+.remove-scrolling { 
+    overflow: hidden; 
+    height: 100vh;
+} 
+.offcanvas__overlay {
+    position: absolute;    
+    top: 0;  
+    left: 0;     
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .25s ease;    
+    z-index: -1;
+}
+.offcanvas.is-opened .offcanvas__overlay {
+    background-color: #000;
+    opacity: 0.5;
+}
+.offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    z-index: 9;
+    opacity: 0;
+}
+.offcanvas.is-opened {
+    visibility: visible;
+    opacity: 1;
+}
+.offcanvas__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 429px;
+    height: 160px;
+    padding: 32px;
+    transition: .25s;
+    background: #fff;
+    z-index: 9;
+    border-radius: 24px;
+}
+.offcanvas.is-opened .offcanvas__wrapper {
+}
+.offcanvas__close {
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    right: 16px;
+    top: 16px;
+    z-index: 9;
+}
+.offcanvas__content {
+    position: relative;
+    height: 100%;
+}
+.offcanvas__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 128%;
+    margin-bottom: 16px;
+}
+.offcanvas__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+  
+@media (max-width: 1440px) {}
+@media (max-width: 768px) {
+    .offcanvas__wrapper {
+      width: 100%;
+    } 
+}

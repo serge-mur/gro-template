@@ -580,6 +580,7 @@
                                 <div class="subscribe-form__input">
                                     <label class="input__label" for="name">Эл.почта</label>
                                     <input class="input__input" type="text" placeholder="Введите адрес эл.почты" name="name" id="name" required />
+                                    <div class="input__invalid">Заполните поле</div>
                                 </div>
                                 <button type="submit" class="subscribe-form__btn">Получать письма роста</button>                                
                             </div>
@@ -588,6 +589,7 @@
                                 <label class="checkbox__label" for="pd">Даю согласие на <a href="#" target="_blank">обработку персональных данных</a></label>
                             </div>
                         </form>
+                        <div class="test offcanvas-link" data-target="subscribe-modal">test</div>
                     </div>
                 </div>
 
@@ -631,7 +633,10 @@
                 <div class="footer__second">
                     <div class="footer__menu">
                         <a href="#" class="footer__menu-item">Блог</a>
-                        <a href="#" class="footer__menu-item footer__menu-item_off">Продукты</a>
+                        <a href="#" onclick="return false;" class="footer__menu-item footer__menu-item_off">
+                            <span class="footer__menu-item-label">Скоро</span>
+                            <span>Продукты</span>    
+                        </a>
                         <a href="#" class="footer__menu-item">Контакты</a>
                     </div>
                     <div class="footer__copyright">
@@ -644,6 +649,22 @@
         </div>
     </footer>
 
+    <!-- modals -->
+    <div class="offcanvas" id="subscribe-modal">
+        <div class="offcanvas__overlay"></div>
+        <div class="offcanvas__wrapper">
+            <button class="offcanvas__close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.66651 6.66699L15.9998 16.0003M15.9998 16.0003L25.3332 25.3337M15.9998 16.0003L25.3332 6.66699M15.9998 16.0003L6.6665 25.3337" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="offcanvas__content">
+                <div class="offcanvas__title">Готово!</div>
+                <div class="offcanvas__text">Подписка успешно оформлена. проверьте почту, там уже есть кое что</div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
