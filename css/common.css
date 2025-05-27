@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
 :root {
     --main: #FBE645;
     --text_001: #000;
@@ -532,6 +534,14 @@ body {
     }
 }
 /* #endregion footer */
+
+/* breadcrumbs */
+.breadcrumbs a {
+    color: var(--text_003);
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;  
+}
 
 /* modals */
 .remove-scrolling { 

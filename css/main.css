@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
-@import "common.css";
-
 /* #region hero */
 .hero {}
 .hero__wrapper {
@@ -948,7 +945,7 @@
     gap: 8px;
 }
 .products-item {
-    background: url(../img/product_back_001.png) no-repeat left bottom #fff;
+    background: url(../img/products_back_001.svg) no-repeat left bottom #fff;
     border-radius: 24px;
     padding: 44px;
     display: flex;
@@ -957,7 +954,7 @@
     transition: .25s;
 }
 .products-item:hover {
-    background-color: var(--main);
+    background: url(../img/products_back_001_hover.svg) no-repeat left bottom var(--main);
 }
 .products-item__title {
     width: 50%;
