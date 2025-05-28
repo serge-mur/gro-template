@@ -1,4 +1,4 @@
-<!-- 27.05.25 - 1 -->
+<!-- 27.05.25 - 3 -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -36,21 +36,37 @@
 
     <main class="blog">
         <div class="container">
-            <div class="breadcrumbs"><a href="/">Главная</a></div>
+
+            <ol class="breadcrumb breadcrumb__blog">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Что то еще</a></li>
+                <li class="breadcrumb__item breadcrumb__item_current" aria-current="page">Блог</li>
+            </ol>
+
             <div class="blog__header">
                 <div class="blog__title">Блог GRO</div>
                 <div class="blog__description">Полезные материалы о продуктивности, мышлении, энергии, осознанности и личном росте. Фреймворки, гайды, аналитика и живой опыт — всё, чтобы расти системно и без перегруза.</div>
             </div>
             <div class="blog__nav blog-nav">
                 <div class="blog-nav__list">
-                    <a href="#" class="blog-nav__item">Все</a>
+                    <a href="#" class="blog-nav__item blog-nav__item_active">
+                        <span class="blog-nav__item-name">Все</span>
+                        <span class="blog-nav__item-label">169</span>
+                    </a>
+                    <a href="#" class="blog-nav__item">
+                        <span class="blog-nav__item-name">Осознанность</span>
+                        <span class="blog-nav__item-label">8</span>
+                    </a>
+
                 </div>
             </div>
             <div class="blog__filters blog-filters">
                 <div class="blog-filters__title">Все материалы</div>
                 <div class="blog-filters__filters">123</div>
             </div>
+
             <div class="blog__grid">
+
                 <div class="blog__card blog-card">
                     <a href="#" class="blog-card__img">
                         <div class="blog-card__category">Категория: Продуктивность</div>
@@ -67,14 +83,75 @@
                         <a href="#" class="blog-card__title">Часть 9. Мой поворотный момент в работе со стрессом.</a>
                         <div class="blog-card__type">Шаблон</div>
                         <div class="blog-card__intro">Почему психическое здоровье мужчин — больше чем разговор о слабости. Как голос помогает выразить чувства.</div>
-                        <a href="#" class="blog-card__all">Все части серии «Допаминовый поворот»</a>
+                        <div class="blog-card__all">
+                            <a href="#" class="blog-card__all-link">Все части серии «Допаминовый поворот»</a>
+                        </div>
                     </div>
                 </div>
-                <div class="blog__card">2</div>
-                <div class="blog__card">3</div>
+
+                <div class="blog__card blog-card blog-card_lock">
+                    <a href="#" class="blog-card__img">
+                        <div class="blog-card__backdrop">
+                            <img class="blog-card__backdrop-img" src="img/lock_icon.svg" alt="">
+                            <div class="blog-card__backdrop-title">Статья для участников сообщества </div>
+                        </div>
+                        <div class="blog-card__category">Категория: Продуктивность</div>
+                        <img src="img/blog_card_img.jpg" alt="">
+                    </a>
+                    <div class="blog-card__content">
+                        <div class="blog-card__header">
+                            <div class="blog-card__tags">
+                                <a href="#" class="blog-card__tags-item">#Допамин</a>
+                                <a href="#" class="blog-card__tags-item">#Growthmindset</a>
+                            </div>
+                            <div class="blog-card__date">15 мая 2025</div>
+                        </div>
+                        <a href="#" class="blog-card__title">Часть 9. Мой поворотный момент в работе со стрессом.</a>
+                        <div class="blog-card__type">Шаблон</div>
+                        <div class="blog-card__intro">Почему психическое здоровье мужчин — больше чем разговор о слабости. Как голос помогает выразить чувства.</div>
+                        <div class="blog-card__all">
+                            <a href="#" class="blog-card__all-link">Все части серии «Допаминовый поворот»</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__card blog-card">
+                    <a href="#" class="blog-card__img">
+                        <div class="blog-card__category">Категория: Продуктивность</div>
+                        <img src="img/blog_card_img.jpg" alt="">
+                    </a>
+                    <div class="blog-card__content">
+                        <div class="blog-card__header">
+                            <div class="blog-card__tags">
+                                <a href="#" class="blog-card__tags-item">#Допамин</a>
+                                <a href="#" class="blog-card__tags-item">#Growthmindset</a>
+                            </div>
+                            <div class="blog-card__date">15 мая 2025</div>
+                        </div>
+                        <a href="#" class="blog-card__title">Часть 9. Мой поворотный момент в работе со стрессом.</a>
+                        <div class="blog-card__type">Шаблон</div>
+                        <div class="blog-card__intro">Почему психическое здоровье мужчин — больше чем разговор о слабости. Как голос помогает выразить чувства.</div>
+                        <div class="blog-card__all">
+                            <a href="#" class="blog-card__all-link">Все части серии «Допаминовый поворот»</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="blog__card">4</div>
                 <div class="blog__card">5</div>
+                <div class="blog__card">6</div>
             </div>
+
+            <div class="blog__footer">
+                <button class="blog__show-more">
+                    <span>Показать больше статей</span>
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5 8.12402L12.4688 16.1553L4.5 8.12402" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </button>                
+            </div>
+
+
         </div>
 
     </main>
