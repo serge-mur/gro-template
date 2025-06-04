@@ -81,5 +81,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // blog nav
+    blogNavMobBtn = document.querySelector('.blog-nav__mob-btn');
+    blogNavMobBtn.addEventListener('click', function() {
+        const item = this.closest('.blog-nav');
+        const isActive = item.classList.contains('blog-nav_active');
+        item.classList.toggle('blog-nav_active', !isActive);
+    });
+
+    // blog dropdown
+    document.querySelectorAll('.dropdown__btn').forEach(el => {
+        el.addEventListener('click', function() {
+            const item = el.closest('.dropdown');
+            const isActive = item.classList.contains('dropdown_open');
+            item.classList.toggle('dropdown_open', !isActive);
+            // close all other dropdown
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                if (dropdown !== item) {
+                    dropdown.classList.remove('dropdown_open');
+                }
+            });
+        });
+
+    });
+
 
 });
