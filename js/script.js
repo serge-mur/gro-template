@@ -105,5 +105,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    // mob filters
+    const filtersOffcanvas = document.querySelector('.blog-filters__offcanvas');
+    document.querySelector('.blog-filters__btn').addEventListener('click', function() {
+        document.body.classList.add("remove-scrolling");
+        filtersOffcanvas.classList.add('is-opened');
+    });
+    document.querySelector('.blog-filters__overlay').addEventListener('click', function() {
+        document.body.classList.remove("remove-scrolling");
+        filtersOffcanvas.classList.remove('is-opened');
+    });
+
+    // search
+    document.querySelector('.search__open-btn').addEventListener('click', function(e) {
+        const search = e.target.closest('.search');
+        search.querySelector('.search__input').classList.add('is-opened');
+    });
+
 
 });

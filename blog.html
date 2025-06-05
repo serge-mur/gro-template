@@ -1,4 +1,4 @@
-<!-- 27.05.25 - 6 -->
+<!-- 27.05.25 - 8 -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -77,34 +77,40 @@
             <div class="blog__filters blog-filters">
                 <div class="blog-filters__title">Все материалы</div>
                 <div class="blog-filters__filters">
-                    <div class="dropdown dropdown_menu">
-                        <button class="dropdown__btn">Все материалы</button>
-                        <div class="dropdown__menu">
-                            <a class="dropdown__item dropdown__item_icon_var1 dropdown__item_active" href="#">Все материалы</a>
-                            <a class="dropdown__item dropdown__item_icon_var1" href="#">Статья</a>
-                            <a class="dropdown__item dropdown__item_icon_var1" href="#">Гайды</a>
+                    <div class="blog-filters__offcanvas">
+                        <div class="blog-filters__overlay"></div>
+                        <div class="blog-filters__wrapper">
+                            <div class="dropdown dropdown_menu">
+                                <button class="dropdown__btn">Все материалы</button>
+                                <div class="dropdown__menu">
+                                    <a class="dropdown__item dropdown__item_icon_var1 dropdown__item_active" href="#">Все материалы</a>
+                                    <a class="dropdown__item dropdown__item_icon_var1" href="#">Статья</a>
+                                    <a class="dropdown__item dropdown__item_icon_var1" href="#">Гайды</a>
+                                </div>
+                            </div>
+                            <div class="dropdown dropdown_sort">
+                                <button class="dropdown__btn">Сначала новые</button>
+                                <div class="dropdown__menu">
+                                    <a class="dropdown__item dropdown__item_active" href="#">Сначала новые</a>
+                                    <a class="dropdown__item" href="#">Сначала старые</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="dropdown dropdown_sort">
-                        <button class="dropdown__btn">Сначала новые</button>
-                        <div class="dropdown__menu">
-                            <a class="dropdown__item dropdown__item_active" href="#">Сначала новые</a>
-                            <a class="dropdown__item" href="#">Сначала старые</a>
-                        </div>
-                    </div>
-                    <div class="blog-filters__btn">
+                    <button class="blog-filters__btn">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 17.5358L10 17.5179M10 17.5179C10 19.1649 11.3441 20.5 12.991 20.5C14.6479 20.5 16 19.1568 16 17.5C16 15.8431 14.6569 14.5 13 14.5C11.3431 14.5 10 15.8611 10 17.5179ZM18 17.5H22M2 7.53586L4 7.51793M4 7.51793C4 5.86108 5.34315 4.5 7 4.5C8.65686 4.5 10 5.84315 10 7.5C10 9.15686 8.64787 10.5 6.99101 10.5C5.34406 10.5 4 9.16489 4 7.51793ZM12 7.50001L22 7.50001" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
                         </svg>
-                    </div>
+                    </button>
                     <div class="search">
-                        <input type="text" class="search__input" placeholder="Поиск по заголовкам и темам">
-                        <div class="search__open-btn">
+                        <button class="search__open-btn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.75 15.75L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
                             </svg>                            
-                        </div>
+                        </button>                        
+                        <input type="text" id="search" class="search__input" placeholder="Поиск по заголовкам и темам">
                     </div>
+                    
                 </div>
             </div>
 

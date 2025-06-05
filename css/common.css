@@ -18,7 +18,9 @@ img {
 button {
     cursor: pointer;
 }
-
+html, body {
+    scrollbar-gutter: stable;    
+}
 body {
     font-family: "Golos Text", sans-serif;
     font-weight: 400;
@@ -26,7 +28,6 @@ body {
     line-height: 130%;
     background-color: var(--bg);
     color: var(--text_001);
-    scrollbar-gutter: stable;
 }
 
 /* container */
