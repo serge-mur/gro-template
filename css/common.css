@@ -536,7 +536,7 @@ body {
 }
 /* #endregion footer */
 
-/* breadcrumbs */
+/* #region breadcrumbs */
 .breadcrumb {
     display: flex;
     flex-wrap: wrap;
@@ -573,8 +573,9 @@ body {
         font-size: 14px;   
     }    
 }
+/* #endregion breadcrumbs */
 
-/* modals */
+/* #region modals */
 .remove-scrolling { 
     overflow: hidden; 
     height: 100vh;
@@ -652,3 +653,4 @@ body {
       width: 100%;
     } 
 }
+/* #endregion modals */

@@ -91,6 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // tags filter
+    const tagsWrapper = document.querySelector('.blog-tags__wrapper');
+    const moreBtn = document.querySelector('.blog-tags__more-btn');
+    moreBtn.addEventListener('click', function(e) {
+        tagsWrapper.classList.toggle('blog-tags__wrapper_start');
+        e.currentTarget.classList.toggle('is-open');
+        // const items = tagsWrapper.querySelectorAll('.blog-tags__item');
+        // items.forEach(el => {
+        //     el.style.display = "block";
+        // });
+
+    });
+
     // blog dropdown
     document.querySelectorAll('.dropdown__btn').forEach(el => {
         el.addEventListener('click', function() {
