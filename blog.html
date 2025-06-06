@@ -1,4 +1,4 @@
-<!-- 27.05.25 - 8 -->
+<!-- 27.05.25 - 12 -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -95,6 +95,7 @@
                                     <a class="dropdown__item" href="#">Сначала старые</a>
                                 </div>
                             </div>
+                            <button class="blog-filters__apply">Применить</button>
                         </div>
                     </div>
                     <button class="blog-filters__btn">
@@ -102,15 +103,34 @@
                             <path d="M2 17.5358L10 17.5179M10 17.5179C10 19.1649 11.3441 20.5 12.991 20.5C14.6479 20.5 16 19.1568 16 17.5C16 15.8431 14.6569 14.5 13 14.5C11.3431 14.5 10 15.8611 10 17.5179ZM18 17.5H22M2 7.53586L4 7.51793M4 7.51793C4 5.86108 5.34315 4.5 7 4.5C8.65686 4.5 10 5.84315 10 7.5C10 9.15686 8.64787 10.5 6.99101 10.5C5.34406 10.5 4 9.16489 4 7.51793ZM12 7.50001L22 7.50001" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <div class="search">
-                        <button class="search__open-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.75 15.75L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-                            </svg>                            
-                        </button>                        
-                        <input type="text" id="search" class="search__input" placeholder="Поиск по заголовкам и темам">
-                    </div>
-                    
+                    <button class="blog-filters__search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 15.75L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button> 
+                </div>
+                <div class="blog-filters__search search">                     
+                    <input type="text" id="search" class="search__input" placeholder="Поиск по заголовкам и темам">
+                    <div class="search__clear" onclick="document.getElementById('search').value = '';"></div>
+                </div>
+            </div>
+
+            <div class="blog__search-result search-result">
+                <div class="search-result__ok">Найдено 3 статьи</div>
+                <div class="search-result__err">
+                    <div>По вашему запросу <span>«asflkjanflskjdfnlsd»</span> ничего не найдено</div>
+                </div>
+            </div>
+
+            <div class="blog__tags blog-tags">
+                <div class="blog-tags__wrapper">
+                    <a href="#" class="blog-tags__item">#Допамин</a>
+                    <a href="#" class="blog-tags__item">#Рефлексия</a>
+                    <a href="#" class="blog-tags__item">#Мышление первого принципа</a>
+                </div>
+                <div class="blog-tags__controls">
+                    <button class="blog-tags__more-btn">Показать ещё</button>
+                    <button class="blog-tags__reset-btn">Сбросить фильтры</button>
                 </div>
             </div>
 

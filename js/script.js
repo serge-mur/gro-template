@@ -83,11 +83,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // blog nav
     blogNavMobBtn = document.querySelector('.blog-nav__mob-btn');
-    blogNavMobBtn.addEventListener('click', function() {
-        const item = this.closest('.blog-nav');
-        const isActive = item.classList.contains('blog-nav_active');
-        item.classList.toggle('blog-nav_active', !isActive);
-    });
+    if (blogNavMobBtn) {
+        blogNavMobBtn.addEventListener('click', function() {
+            const item = this.closest('.blog-nav');
+            const isActive = item.classList.contains('blog-nav_active');
+            item.classList.toggle('blog-nav_active', !isActive);
+        });
+    }
 
     // blog dropdown
     document.querySelectorAll('.dropdown__btn').forEach(el => {
@@ -116,11 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
         filtersOffcanvas.classList.remove('is-opened');
     });
 
-    // search
-    document.querySelector('.search__open-btn').addEventListener('click', function(e) {
-        const search = e.target.closest('.search');
-        search.querySelector('.search__input').classList.add('is-opened');
+    // mob search
+    document.querySelector('.blog-filters__search-btn').addEventListener('click', function(e) {
+        document.querySelector('.search').classList.toggle('is-opened');
     });
+    const input = document.querySelector('.search__input')
+    const searchResult = document.querySelector('.search-result')
+    input.addEventListener('change', function () {
+        document.querySelector('.search-result').style.display = "block";
+    })
 
 
 });
