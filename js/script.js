@@ -94,14 +94,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // tags filter
     const tagsWrapper = document.querySelector('.blog-tags__wrapper');
     const moreBtn = document.querySelector('.blog-tags__more-btn');
+    const moreBtnSpan = document.querySelector('.blog-tags__more-btn>span');
     moreBtn.addEventListener('click', function(e) {
-        tagsWrapper.classList.toggle('blog-tags__wrapper_start');
-        e.currentTarget.classList.toggle('is-open');
-        // const items = tagsWrapper.querySelectorAll('.blog-tags__item');
-        // items.forEach(el => {
-        //     el.style.display = "block";
-        // });
-
+        if(!moreBtn.classList.contains('is-open')) {
+            tagsWrapper.classList.remove('blog-tags__wrapper_start');
+            moreBtn.classList.add('is-open');
+            moreBtnSpan.innerText = 'Показать меньше';
+        } else {
+            tagsWrapper.classList.add('blog-tags__wrapper_start');
+            moreBtn.classList.remove('is-open');
+            moreBtnSpan.innerText = 'Показать ещё';
+        }
     });
 
     // blog dropdown
