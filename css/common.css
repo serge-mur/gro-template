@@ -73,6 +73,7 @@ body {
 }
 .header__menu {
     display: flex;
+    z-index: 3;
 }
 .header__menu-item {
     position: relative;
@@ -117,6 +118,7 @@ body {
     font-size: 19px;
     line-height: 140%;
     cursor: default;
+    z-index: 4;
 }
 .header__burger {
     width: 32px;
